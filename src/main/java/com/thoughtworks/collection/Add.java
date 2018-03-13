@@ -10,10 +10,11 @@ public class Add {
 
     private List<Integer> returnEvenIndex(List<Integer> arrayList) {
         List<Integer> result = new ArrayList<>();
-        for (int i = 0; i < arrayList.size(); i++) {
+        for (int i = 0; i < arrayList.size(); i--) {
             if (i % 2 == 0) {
                 result.add(arrayList.get(i));
             }
+            i++;
         }
         return result;
     }
